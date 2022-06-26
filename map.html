@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- A Map holds key-value pairs where the keys can be any datatype. 
+A Map remembers the original insertion order of the keys. A Map has a
+ property that represents the size of the map. -->
+
+  <script>
+
+    const arr = [5, 1, 3, 2, 6];
+    console.log(arr)
+
+    function double(x) {
+      return x * 2;
+    }
+    const abc = arr.map(double);
+    console.log(abc)
+
+    //array .filter
+    const ar = [5, 1, 3, 2, 6];
+    console.log(ar)
+
+    const print = ar.filter((x) => x > 4);
+    console.log(print)
+
+
+
+    // ...  check sum or max
+    const arr1 = [5, 1, 3, 2, 6];
+    console.log(arr1)
+    function findSum(arr1) {
+      let sum = 0;
+      for (let i = 0; i < arr1.length; i++) {
+        sum = sum + arr1[i]
+      }
+      return sum;
+
+    }
+    console.log(findSum(arr1));
+  </script>
+</body>
+
+</html>
